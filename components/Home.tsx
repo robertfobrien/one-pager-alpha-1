@@ -32,7 +32,7 @@ export const Home = () => {
       <Box d='flex' justifyContent='center'>
         <Box w='xl'>
           <Heading as='h1' size='xl'>
-            Welcome to One Pager Alpha!
+            Welcome to One Pager Alpha V2!
           </Heading>
 
           <Heading as='h2' size='md'>
