@@ -31,7 +31,7 @@ export const OnePagerFinances = ({
     return `$${financeNumberString}`;
   };
 
-  const percentRaised = (100 * (onePagerData.fundsRaisedInStage / onePagerData.fundraisingStageGoal)).toFixed(0);
+  const percentRaised = Number ( (100 * (onePagerData.fundsRaisedInStage / onePagerData.fundraisingStageGoal)).toFixed(0));
   //console.log(onePagerData.fundsRaisedInStage+ " " + onePagerData.fundraisingStageGoal + " $" + percentRaised);
 
 
@@ -49,7 +49,7 @@ export const OnePagerFinances = ({
       <SubHeading>
         Funding Use: {onePagerData.fundraisingDetails}
       </SubHeading>
-      <CircularProgress value={percentRaised} color="#0070f3" size="100px" align="center">
+      <CircularProgress value={percentRaised} color="#0070f3" size="100px">
           <CircularProgressLabel>%{percentRaised}</CircularProgressLabel>
       </CircularProgress>
     </ContentCard>

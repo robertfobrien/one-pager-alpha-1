@@ -92,7 +92,7 @@ const OnePagerLinks = ({ onePagers }: OnePagerLinksProps) => {
     <>
     
       {onePagers.map((onePagerData: OnePagerPublicData) => (
-        <ContentCard>
+        <ContentCard isLoading={false}>
         <Box key={onePagerData.companyName} marginBottom='10px' alignItems="center">
           <Image rounded="full" alignContent="right" size="40px" src={onePagerData.logo} alt={onePagerData.companyName}/>
            
